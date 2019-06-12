@@ -4,33 +4,44 @@
     $.fn.andSelf = function() {
       return this.addBack.apply(this, arguments);
     }
-  
+
+    // Because only Chrome supports offset-path, feGaussianBlur for now
+
+    // ============= check browser =================
+    const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+
+    if(!isChrome) {
+        document.getElementsByClassName('infinityChrome')[0].style.display = "none";
+        document.getElementsByClassName('infinity')[0].style.display = "block";
+    }
+    // =============================================
+
       /* Loader Code Start */
-      $(window).on("load", function() { 
-          $(".section-loader").fadeOut("slow");
+      // $(window).on("load", function() { 
+      //     $(".section-loader").fadeOut("slow");
           
-          var $container = $('.portfolioContainer');
-          $container.isotope({
-              filter: '*',
-              animationOptions: {
-                  queue: true
-              }
-          });
+      //     var $container = $('.portfolioContainer');
+      //     $container.isotope({
+      //         filter: '*',
+      //         animationOptions: {
+      //             queue: true
+      //         }
+      //     });
        
-          $('.portfolio-nav li').click(function(){
-              $('.portfolio-nav .current').removeClass('current');
-              $(this).addClass('current');
+      //     $('.portfolio-nav li').click(function(){
+      //         $('.portfolio-nav .current').removeClass('current');
+      //         $(this).addClass('current');
        
-              var selector = $(this).attr('data-filter');
-              $container.isotope({
-                  filter: selector,
-                  animationOptions: {
-                      queue: true
-                  }
-               });
-               return false;
-          });
-        });
+      //         var selector = $(this).attr('data-filter');
+      //         $container.isotope({
+      //             filter: selector,
+      //             animationOptions: {
+      //                 queue: true
+      //             }
+      //          });
+      //          return false;
+      //     });
+      //   });
       /* Loader Code End */
   
    

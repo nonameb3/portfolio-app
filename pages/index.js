@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react'
+
 import Head from '../components/HeadHtml'
 import FooterScript from '../components/FooterScript'
 import Navbar from '../components/Navbar'
@@ -21,10 +22,7 @@ const RenderLoading = () => {
   const isloading = useContext(myContext)
   return isloading ? (
     <div className="section-loader">
-      <div className="loader">
-        <div></div>
-        <div></div> 
-      </div>
+      <h3 style={{textDecoration: 'bold'}}>Loading...</h3>
     </div>
   ) : null
 }
@@ -32,36 +30,25 @@ const RenderLoading = () => {
 const App = () => {
   const [state, setState] = useState(initialState)
   useEffect(() => {
-    document.body.className ="white-vertion black-bg"
+    window.scrollTo(0, 0);
+    setState({...state, loading: false})
   },[])
-
-  useEffect(() => {
-    if(document.readyState === "complete"){
-      setState({...state, loading: false})
-    }
-  }, state.loading)
 
   return (
     <myContext.Provider value={state.loading}>
-        <Head title="Home" />
-        {/* <div className="section-loader">
-          <div className="loader">
-            <div></div>
-            <div></div> 
-          </div>
-        </div> */}
-        <RenderLoading/>
-        <Navbar/>
-        <Home/>
-        <About/>
-        <Service/>
-        <Skills/>
-        <Expriences/>
-        <Portfolio/>
-        <Blog/>
-        <Quates/>
-        <Contact/>
-        <FooterScript/>
+      <Head title="Home" />
+      <RenderLoading/>
+      <Navbar/>
+      <Home/>
+      <About/>
+      <Service/>
+      <Skills/>
+      <Expriences/>
+      <Portfolio/>
+      <Blog/>
+      <Quates/>
+      <Contact/>
+      <FooterScript/>
     </myContext.Provider>
   )
 }

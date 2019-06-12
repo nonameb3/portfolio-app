@@ -152,9 +152,9 @@ export default function Portfolio() {
             </div>
             <div className="col-sm-7">
               <div className="mh-portfolio-modal-img">
-                <img src="pr-0.jif" alt="" className="img-fluid" />
+                <img src="/static/pr-0.jif" alt="" className="img-fluid" />
                 <p>All variations are organized separately so you can use / customize the template very easily.</p>    
-                <img src="pr-1.jif" alt="" className="img-fluid" />
+                <img src="/static/pr-1.jif" alt="" className="img-fluid" />
                 <p>All variations are organized separately so you can use / customize the template very easily.</p>     
               </div>
             </div>
