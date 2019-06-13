@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html >
         <Head>
-          <meta charSet="UTF-8" />
+          <meta charSet="utf-8" />
         </Head>
         <body className="white-vertion black-bg">
           <Main />

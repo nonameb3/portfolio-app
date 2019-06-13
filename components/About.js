@@ -28,9 +28,7 @@ export default function About() {
                 data-wow-duration="0.8s"
                 data-wow-delay="0.2s"
               >
-                Hello, I’m a Patrick, web-developer based on Paris. I have rich
-                experience in web site design & building and customization. Also
-                I am good at
+                Reprehenderit voluptate irure cillum incididunt reprehenderit aliquip adipisicing elit Lorem. Ad laboris adipisicing in ad culpa adipisicing labore minim sunt. Cupidatat officia qui quis reprehenderit qui tempor enim minim reprehenderit quis quis pariatur. Veniam consectetur exercitation dolor excepteur aute esse laboris ad amet. Officia id irure cillum deserunt sint veniam deserunt.
               </p>
               <div
                 className="mh-about-tag wow fadeInUp"
@@ -39,7 +37,10 @@ export default function About() {
               >
                 <ul>
                   <li>
-                    <span>php</span>
+                    <span>c#</span>
+                  </li>
+                  <li>
+                    <span>Javascript</span>
                   </li>
                   <li>
                     <span>html</span>
@@ -48,16 +49,16 @@ export default function About() {
                     <span>css</span>
                   </li>
                   <li>
-                    <span>php</span>
-                  </li>
-                  <li>
-                    <span>wordpress</span>
+                    <span>NodeJS</span>
                   </li>
                   <li>
                     <span>React</span>
                   </li>
                   <li>
-                    <span>Javascript</span>
+                    <span>Redux</span>
+                  </li>
+                  <li>
+                    <span>SQL/NoSQL</span>
                   </li>
                 </ul>
               </div>
@@ -67,7 +68,7 @@ export default function About() {
                 data-wow-duration="0.8s"
                 data-wow-delay="0.4s"
               >
-                Downlaod CV <i className="fa fa-download" />
+                Downlaod Resume <i className="fa fa-download" />
               </a>
             </div>
           </div>
