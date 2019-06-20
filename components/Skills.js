@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Skills() {
   return (
-    <section className="mh-skills" id="mh-skills">
+    <section className="mh-skills" id="mh-skills" >
       <div className="home-v-img">
         <div className="container">
           <div className="row section-separator">
@@ -11,8 +11,9 @@ export default function Skills() {
               <div className="mh-skills-inner">
                 <div
                   className="mh-professional-skill wow fadeInUp"
-                  data-wow-duration="0.8s"
-                  data-wow-delay="0.3s"
+                  data-aos="fade-right"
+                  data-aos-offset="200"
+                  data-aos-easing="ease-in-sine"
                 >
                   <h3>Technical Skills</h3>
                   <div className="each-skills">
@@ -90,8 +91,9 @@ export default function Skills() {
             <div className="col-sm-12 col-md-6">
               <div
                 className="mh-professional-skills wow fadeInUp"
-                data-wow-duration="0.8s"
-                data-wow-delay="0.5s"
+                data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
               >
                 <h3>Professional Skills</h3>
                 <ul className="mh-professional-progress">

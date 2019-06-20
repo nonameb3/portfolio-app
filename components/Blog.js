@@ -6,11 +6,11 @@ export default function Blog() {
       <div className="img-color-overlay">
         <div className="container">
           <div className="row section-separator">
-            <div className="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+            <div className="col-sm-12 section-title" data-aos="fade-up">
               <h3>Featured Posts</h3>
             </div>
             <div className="col-sm-12 col-md-4">
-              <div className="mh-blog-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+              <div className="mh-blog-item dark-bg" data-aos="flip-right">
                 <img src="/static/images/b-3.png" alt="" className="img-fluid" />
                 <div className="blog-inner">
                   <h2><a href="blog-single.html">A life without the daily traffic jams</a></h2>
@@ -26,7 +26,7 @@ export default function Blog() {
               </div>
             </div>
             <div className="col-sm-12 col-md-4">
-              <div className="mh-blog-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+              <div className="mh-blog-item dark-bg" data-aos="flip-right">
                 <img src="/static/images/b-2.png" alt="" className="img-fluid" />
                 <div className="blog-inner">
                   <h2><a href="blog-single.html">Proportion are what’s really needed</a></h2>
@@ -42,7 +42,7 @@ export default function Blog() {
               </div>
             </div>
             <div className="col-sm-12 col-md-4">
-              <div className="mh-blog-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+              <div className="mh-blog-item dark-bg" data-aos="flip-right">
                 <img src="/static/images/b-1.png" alt="" className="img-fluid" />
                 <div className="blog-inner">
                   <h2><a href="blog-single.html">Mounts of paper work to remember the way</a></h2>

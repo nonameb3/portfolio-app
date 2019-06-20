@@ -5,7 +5,7 @@ export default function About() {
     <section className="mh-about" id="mh-about">
       <div className="container">
         <div className="row section-separator">
-          <div className="col-sm-12 col-md-6">
+          <div className="col-sm-12 col-md-6" data-aos="slide-right">
             <div
               className="mh-about-img shadow-2 wow fadeInUp"
               data-wow-duration="0.8s"
@@ -14,7 +14,7 @@ export default function About() {
               <img src="/static/images/ab-img.png" alt="" className="img-fluid" />
             </div>
           </div>
-          <div className="col-sm-12 col-md-6">
+          <div className="col-sm-12 col-md-6" data-aos="slide-left">
             <div className="mh-about-inner">
               <h2
                 className="wow fadeInUp"

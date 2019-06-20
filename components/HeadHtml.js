@@ -15,13 +15,15 @@ const Head = props => (
       <link href="/static/css/css.css" rel="stylesheet"/>
       <link rel="stylesheet" href="/static/css/font-awesome.min.css"/>
       <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
-      <link rel="stylesheet" href="/static/css/animate.css"/>
-      <link rel="stylesheet" href="/static/css/loadingAnimate.css"/>
-      <link rel="stylesheet" href="/static/css/owl.css"/>
       <link rel="stylesheet" href="/static/css/jquery.fancybox.min.css"/>
+      {/* <link rel="stylesheet" href="/static/css/animate.css"/> */}
+      {/* <link rel="stylesheet" href="/static/css/loadingAnimate.css"/> */}
+      {/* <link rel="stylesheet" href="/static/css/owl.css"/> */}
       <link rel="stylesheet" href="/static/css/styles.css"/>
       <link rel="stylesheet" href="/static/css/responsive.css"/>
-      <link rel="stylesheet" href="/static/css/defauld.css" title="defauld"/>
+
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     </NextHead>
   </React.Fragment>
 )

@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react'
+import dynamic from 'next/dynamic';
 
 import Head from '../components/HeadHtml'
 import FooterScript from '../components/FooterScript'
@@ -30,7 +31,7 @@ const RenderLoading = () => {
 const App = () => {
   const [state, setState] = useState(initialState)
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
     setState({...state, loading: false})
   },[])
 

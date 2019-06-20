@@ -7,16 +7,14 @@ export default function Service() {
         <div className="row section-separator">
           <div
             className="col-sm-12 text-center section-title wow fadeInUp"
-            data-wow-duration="0.8s"
-            data-wow-delay="0.2s"
+            data-aos="fade-up"
           >
             <h2>What I do</h2>
           </div>
           <div className="col-sm-4">
             <div
               className="mh-service-item shadow-1 dark-bg wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.3s"
+              data-aos="fade-up"
             >
               <i className="fa fa-bullseye purple-color" />
               <h3>UI Design</h3>
@@ -30,8 +28,7 @@ export default function Service() {
           <div className="col-sm-4">
             <div
               className="mh-service-item shadow-1 dark-bg wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.5s"
+              data-aos="fade-up"
             >
               <i className="fa fa-code iron-color" />
               <h3>Web Development</h3>
@@ -45,8 +42,7 @@ export default function Service() {
           <div className="col-sm-4">
             <div
               className="mh-service-item shadow-1 dark-bg wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.7s"
+              data-aos="fade-up"
             >
               <i className="fa fa-object-ungroup sky-color" />
               <h3>App Development</h3>
