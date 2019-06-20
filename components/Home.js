@@ -16,13 +16,11 @@ export default function Home() {
                   Waraphon Roonnapai
                 </h2>
                 <h4
-                  className="wow fadeInUp"
-                  data-wow-duration="0.8s"
-                  data-wow-delay="0.3s"
-                >
-                  Full Stack Developer
-                </h4>
-
+                  className="typewrite"
+                  data-period="2000"
+                  data-type='[ "Hi, I am Full-Stack Developer.", "I am Software Engineer.", "I Love to Code.", "I Love to Develop." ]'
+                />
+                  <span class="wrap"></span>
                 <ul>
                   <li
                     className="wow fadeInUp"
