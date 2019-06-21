@@ -1,15 +1,26 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
+
+const handleScroll = setClass => {
+  const nav = document.querySelector('.mh-header');
+  if(pageYOffset > nav.scrollHeight) {
+    setClass('scrolled')
+  } else{
+    setClass('')
+  }
+}
 
 export default function Navbar() {
+  const [navClass, setClass] = useState('')
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => handleScroll(setClass));
+  }, []);
+
   return (
-    <header
-      className="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav"
-      id="mh-header"
-    >
-      <div className="overlay" />
+    <header>
       <div className="container">
         <div className="row">
-          <nav className="navbar navbar-expand-lg mh-nav nav-btn">
+          <nav className={`mh-header navbar navbar-expand-lg mh-nav nav-btn fixed-top ${navClass}`} >
             <button
               className="navbar-toggler"
               type="button"

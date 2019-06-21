@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useContext } from 'react'
-import dynamic from 'next/dynamic';
 
 import Head from '../components/HeadHtml'
 import FooterScript from '../components/FooterScript'
@@ -45,7 +44,6 @@ const App = () => {
       <Service/>
       <Skills/>
       <Expriences/>
-      <Portfolio/>
       <Blog/>
       <Quates/>
       <Contact/>

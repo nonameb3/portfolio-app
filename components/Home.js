@@ -20,7 +20,7 @@ export default function Home() {
                   data-period="2000"
                   data-type='[ "Hi, I am Full-Stack Developer.", "I am Software Engineer.", "I Love to Code.", "I Love to Develop." ]'
                 />
-                  <span class="wrap"></span>
+                  <span className="wrap"></span>
                 <ul>
                   <li
                     className="wow fadeInUp"

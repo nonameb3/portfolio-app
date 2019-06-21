@@ -961,45 +961,20 @@ body {
        Navigation
     ==============
 */
-.mh-home-2 .mh-header-info {
-  text-align: center;
-  padding-top: 100px; }
-  .mh-home-2 .mh-header-info .hero-img {
-    margin-bottom: 30px; }
-    .mh-home-2 .mh-header-info .hero-img img {
-      border: 0px solid #fff;
-      border-radius: 50%; }
-  .mh-home-2 .mh-header-info h2 {
-    font-size: 50px;
-    font-weight: 600;
-    line-height: 60px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    opacity: 0.9; }
-  .mh-home-2 .mh-header-info h4 {
-    font-size: 18px;
-    line-height: 30px;
-    margin-bottom: 20px;
-    opacity: 0.9; }
-  .mh-home-2 .mh-header-info p {
-    padding: 0 120px;
-    font-weight: 300; }
-  .mh-home-2 .mh-header-info ul li {
-    margin: 10px 6px; }
-  .mh-home-2 .mh-header-info ul.mh-home-contact {
-    margin-bottom: 15px; }
-    .mh-home-2 .mh-header-info ul.mh-home-contact li {
-      display: inline-block;
-      margin: 10px 15px; }
-      .mh-home-2 .mh-header-info ul.mh-home-contact li .fa {
-        margin-right: 10px; }
-      .mh-home-2 .mh-header-info ul.mh-home-contact li:hover .fa {
-        color: #0bceaf; }
-  .mh-home-2 .mh-header-info .mh-about-tag {
-    width: 60%;
-    margin: 0 auto; }
-    .mh-home-2 .mh-header-info .mh-about-tag ul li {
-      margin: 6px; }
+.mh-header {
+  /* background: #0ab69a; */
+  /* padding: 10px 0px; */
+  
+}
+.mh-header.scrolled {
+  padding: 5px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.35);
+  -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.35);
+  box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.35);
+  transition: background 500ms;
+}
+
 
 /*
     ==============
