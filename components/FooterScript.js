@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Footer() {
   return (
     <React.Fragment>
@@ -10,6 +8,7 @@ export default function Footer() {
 
       <script src="/static/js/bootstrap.min.js"></script>
       <script src="/static/js/textanimate.js"></script>
+      <script src="/static/js/custom.js"></script>
     </React.Fragment>
   )
 }

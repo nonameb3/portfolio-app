@@ -20,7 +20,7 @@ export default function Navbar() {
     <header>
       <div className="container">
         <div className="row">
-          <nav className={`mh-header navbar navbar-expand-lg mh-nav nav-btn fixed-top ${navClass}`} >
+          <nav className={`mh-header navbar navbar-expand-lg mh-nav nav-btn fixed-top ${navClass}`}>
             <button
               className="navbar-toggler"
               type="button"
@@ -53,11 +53,6 @@ export default function Navbar() {
                 <li className="nav-item">
                   <a className="nav-link" href="#mh-experience">
                     Experiences
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#mh-portfolio">
-                    Portfolio
                   </a>
                 </li>
                 <li className="nav-item">
