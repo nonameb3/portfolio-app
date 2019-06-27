@@ -1,6 +1,16 @@
 import React from "react"
 
-export default function About() {
+export default function About(props) {
+  const {techs, desc} = props
+
+  const renderTech = () => {
+    return (
+      <ul>
+       <li>{techs.map(tech => <li><span>{tech}</span></li>)}</li>
+      </ul>
+    )
+  }
+
   return (
     <section className="mh-about" id="mh-about">
       <div className="container">
@@ -28,39 +38,14 @@ export default function About() {
                 data-wow-duration="0.8s"
                 data-wow-delay="0.2s"
               >
-                Reprehenderit voluptate irure cillum incididunt reprehenderit aliquip adipisicing elit Lorem. Ad laboris adipisicing in ad culpa adipisicing labore minim sunt. Cupidatat officia qui quis reprehenderit qui tempor enim minim reprehenderit quis quis pariatur. Veniam consectetur exercitation dolor excepteur aute esse laboris ad amet. Officia id irure cillum deserunt sint veniam deserunt.
+                {desc}
               </p>
               <div
                 className="mh-about-tag wow fadeInUp"
                 data-wow-duration="0.8s"
                 data-wow-delay="0.3s"
               >
-                <ul>
-                  <li>
-                    <span>c#</span>
-                  </li>
-                  <li>
-                    <span>Javascript</span>
-                  </li>
-                  <li>
-                    <span>html</span>
-                  </li>
-                  <li>
-                    <span>css</span>
-                  </li>
-                  <li>
-                    <span>NodeJS</span>
-                  </li>
-                  <li>
-                    <span>React</span>
-                  </li>
-                  <li>
-                    <span>Redux</span>
-                  </li>
-                  <li>
-                    <span>SQL/NoSQL</span>
-                  </li>
-                </ul>
+                {renderTech()}
               </div>
               <a
                 href="#"
